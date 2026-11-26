@@ -1,0 +1,104 @@
+<div style="width: 100%; background: #F4EFE9; font-family: Inter, system-ui, sans-serif; color: #1C1A19">
+<dc-import name="Header" active="about" hint-size="100%,84px"></dc-import>
+
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 72px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #8E5A12">ABOUT OAZI IMAGERY</div>
+<h1 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(40px, 5.4vw, 76px); line-height: 1.02; font-weight: 600; letter-spacing: -0.025em">Built on truth.<br><span style="color: #8E5A12">Driven by strategy.</span></h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #4A433D">OAZI IMAGERY is a creative communications and technology organisation working at the intersection of strategic communication, visual storytelling and emerging technologies. We help organisations clarify their message, communicate their work, strengthen audience engagement and demonstrate meaningful impact. Born in Benue State and now based in Abuja, we work with partners across Nigeria and around the world.</p>
+</div>
+<img src="/img/img030.jpg" alt="A group of girls in bright blue hijabs laughing together" style="flex: 1 1 420px; min-width: 0; width: 100%; height: 520px; object-fit: cover; border-radius: 20px; display: block">
+</section>
+
+
+<section style="background: #1C1A19; color: #F4EFE9">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #E2B266">WHAT WE STAND FOR</div>
+<h2 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(32px, 4vw, 56px); line-height: 1.05; font-weight: 600; letter-spacing: -0.02em">Your story. <span style="color: #E2B266">Our strategy.</span> Shared impact.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 1 1 280px; border-top: 2px solid #C1832A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><div style="font-family: Sora, Inter, sans-serif; font-size: 22px; font-weight: 600">Your story</div><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9C0B6">It starts with you: the communities you serve, the change you've made, the evidence you hold. We listen first, and we never manufacture what isn't there.</p></div>
+<div style="flex: 1 1 280px; border-top: 2px solid #C1832A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><div style="font-family: Sora, Inter, sans-serif; font-size: 22px; font-weight: 600">Our strategy</div><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9C0B6">We shape that story for the people who matter most, whether funders, citizens, customers or partners, and choose the message, the channel and the moment.</p></div>
+<div style="flex: 1 1 280px; border-top: 2px solid #C1832A; padding-top: 20px; display: flex; flex-direction: column; gap: 10px"><div style="font-family: Sora, Inter, sans-serif; font-size: 22px; font-weight: 600">Shared impact</div><p style="margin: 0; font-size: 16px; line-height: 1.6; color: #C9C0B6">The result is measured, reported and owned together: more support for you, more dignity for the people in the story, and proof of what changed.</p></div>
+</div>
+</div>
+</section>
+
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="display: flex; flex-wrap: wrap; gap: 24px 64px; align-items: flex-end">
+<div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #8E5A12">HOW WE SHOW UP</div>
+<h2 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.015em">Partners, not vendors.</h2>
+</div>
+<p style="flex: 1 1 380px; margin: 0; font-size: 17px; line-height: 1.6; color: #4A433D">We don't deliver and disappear. We sit with your team, share your goals and stay with you from first consultation to final impact report. See the difference for yourself.</p>
+</div>
+<div role="group" aria-label="Compare" style="display: inline-flex; align-self: flex-start; background: #E9E2D8; border-radius: 999px; padding: 4px; gap: 4px">
+<button type="button" onClick="{{showVendor}}" aria-pressed="{{vendorPressed}}" style="font: inherit; font-size: 15px; font-weight: 600; border: none; cursor: pointer; padding: 12px 22px; border-radius: 999px; background: {{vendorBg}}; color: {{vendorFg}}">A typical vendor</button>
+<button type="button" onClick="{{showPartner}}" aria-pressed="{{partnerPressed}}" style="font: inherit; font-size: 15px; font-weight: 600; border: none; cursor: pointer; padding: 12px 22px; border-radius: 999px; background: {{partnerBg}}; color: {{partnerFg}}">OAZI as your partner</button>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<sc-for list="{{rows}}" as="row" hint-placeholder-count="4">
+<div style="flex: 1 1 260px; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 10px; background: {{row.bg}}; color: {{row.fg}}; border: 1px solid {{row.border}}">
+<div style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: {{row.label}}">{{row.topic}}</div>
+<div style="font-family: Sora, Inter, sans-serif; font-size: 19px; font-weight: 600; line-height: 1.3">{{row.text}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+
+<section style="background: #FBF8F4; border-top: 1px solid #E6DED3; border-bottom: 1px solid #E6DED3">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<img src="/img/img022.jpg" alt="Portrait of Zion Odeh Agaji in a blue denim jacket" style="flex: 0 1 400px; min-width: 0; width: 100%; height: 520px; object-fit: cover; object-position: center 20%; border-radius: 20px; display: block">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #8E5A12">LED PERSONALLY BY THE FOUNDER</div>
+<h2 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.015em">Zion Odeh Agaji</h2>
+<div style="font-size: 16px; color: #4A433D">Founder &amp; Creative Director · Creative Technologist</div>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #4A433D">Zion Odeh Agaji is a seasoned leader in creative technology, with experience spanning Europe and Africa. He is a storyteller and an engineer in equal measure: a documentary filmmaker who also designs, architects, optimises and integrates artificial intelligence systems.</p>
+<p style="margin: 0; font-size: 17px; line-height: 1.65; color: #4A433D">That rare combination is OAZI IMAGERY's edge. Zion sees both the story and the system behind it, so your film is made to move people and your campaign is engineered to reach them. Whether the next big project is a story or an AI system, he is already building it.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="background: #F4EFE9; border: 1px solid #E6DED3; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 500">Documentary storytelling</span>
+<span style="background: #F4EFE9; border: 1px solid #E6DED3; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 500">Creative direction</span>
+<span style="background: #F4EFE9; border: 1px solid #E6DED3; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 500">AI system design &amp; architecture</span>
+<span style="background: #F4EFE9; border: 1px solid #E6DED3; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 500">AI optimisation &amp; integration</span>
+<span style="background: #F4EFE9; border: 1px solid #E6DED3; padding: 8px 14px; border-radius: 999px; font-size: 14px; font-weight: 500">Campaign strategy</span>
+</div>
+<div style="background: #1C1A19; color: #F4EFE9; border-radius: 14px; padding: 18px 20px; font-family: Sora, Inter, sans-serif; font-size: 18px; line-height: 1.45; font-weight: 500">When Zion takes on your project, you get the founder's full attention, from the first conversation to the final impact report. Never a hand-off.</div>
+<blockquote style="margin: 0; border-left: 3px solid #C1832A; padding-left: 20px; font-family: Sora, Inter, sans-serif; font-size: 21px; line-height: 1.45; font-weight: 500">"Your story is the most powerful asset your organisation has. Our strategy makes it impossible to ignore. The impact belongs to everyone it reaches."</blockquote>
+</div>
+</div>
+</section>
+
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 96px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #8E5A12">OUR PRINCIPLES</div>
+<h2 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.015em">Four promises we keep on every project.</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 240px; background: #FBF8F4; border: 1px solid #E6DED3; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Sora, Inter, sans-serif; font-size: 14px; font-weight: 600; color: #8E5A12">01</div><div style="font-family: Sora, Inter, sans-serif; font-weight: 600; font-size: 19px">Documentary-first</div><div style="font-size: 15px; line-height: 1.55; color: #4A433D">Grounded in authentic storytelling, never manufactured or hollow.</div></div>
+<div style="flex: 1 1 240px; background: #FBF8F4; border: 1px solid #E6DED3; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Sora, Inter, sans-serif; font-size: 14px; font-weight: 600; color: #8E5A12">02</div><div style="font-family: Sora, Inter, sans-serif; font-weight: 600; font-size: 19px">Responsibly innovative</div><div style="font-size: 15px; line-height: 1.55; color: #4A433D">Human creativity first, with emerging technologies used carefully to work faster and reach further.</div></div>
+<div style="flex: 1 1 240px; background: #FBF8F4; border: 1px solid #E6DED3; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Sora, Inter, sans-serif; font-size: 14px; font-weight: 600; color: #8E5A12">03</div><div style="font-family: Sora, Inter, sans-serif; font-weight: 600; font-size: 19px">Strategy-led</div><div style="font-size: 15px; line-height: 1.55; color: #4A433D">We ask why before what. Every deliverable serves a measurable objective.</div></div>
+<div style="flex: 1 1 240px; background: #FBF8F4; border: 1px solid #E6DED3; border-radius: 16px; padding: 26px; display: flex; flex-direction: column; gap: 8px"><div style="font-family: Sora, Inter, sans-serif; font-size: 14px; font-weight: 600; color: #8E5A12">04</div><div style="font-family: Sora, Inter, sans-serif; font-weight: 600; font-size: 19px">Impact-measured</div><div style="font-size: 15px; line-height: 1.55; color: #4A433D">Every project closes with a documented impact report of what changed.</div></div>
+</div>
+</section>
+
+
+<section style="max-width: 1240px; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: #8E5A12">OUR JOURNEY</div>
+<h2 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(32px, 3.8vw, 52px); line-height: 1.08; font-weight: 600; letter-spacing: -0.015em">Four years of true stories.</h2>
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 20px">
+<li style="flex: 1 1 220px; border-top: 3px solid #C1832A; padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><div style="font-family: Sora, Inter, sans-serif; font-size: 28px; font-weight: 600">2022</div><div style="font-weight: 600">Founded · 23 December</div><div style="font-size: 15px; color: #4A433D">OAZI IMAGERY begins in Benue State.</div></li>
+<li style="flex: 1 1 220px; border-top: 3px solid #E0D7CB; padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><div style="font-family: Sora, Inter, sans-serif; font-size: 28px; font-weight: 600">2023–25</div><div style="font-weight: 600">Growing with our partners</div><div style="font-size: 15px; color: #4A433D">From Benue to Abuja, telling stories with health and development partners including AHF and CARE.</div></li>
+<li style="flex: 1 1 220px; border-top: 3px solid #E0D7CB; padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><div style="font-family: Sora, Inter, sans-serif; font-size: 28px; font-weight: 600">2026</div><div style="font-weight: 600">4th anniversary</div><div style="font-size: 15px; color: #4A433D">Four years of telling stories of true representation.</div></li>
+<li style="flex: 1 1 220px; border-top: 3px solid #C1832A; padding-top: 18px; display: flex; flex-direction: column; gap: 6px"><div style="font-family: Sora, Inter, sans-serif; font-size: 28px; font-weight: 600">2027</div><div style="font-weight: 600">Open for partnerships</div><div style="font-size: 15px; color: #4A433D">Opening to new partners as part of OAZI GROUP.</div></li>
+</ol>
+</section>
+
+<dc-import name="Footer" hint-size="100%,560px"></dc-import>
+</div>

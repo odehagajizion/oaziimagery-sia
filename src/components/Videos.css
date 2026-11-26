@@ -1,0 +1,4 @@
+body{margin:0}
+.oz-vid:hover .oz-play{transform:scale(1.08)}
+.oz-play{transition:transform .2s ease}
+@media (prefers-reduced-motion: reduce){.oz-play{transition:none}}

@@ -1,0 +1,39 @@
+<section aria-label="Watch our stories" style="width: 100%; background: {{bg}}; color: {{fg}}; font-family: Inter, system-ui, sans-serif">
+<div style="max-width: 1240px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 32px">
+<div style="display: flex; flex-wrap: wrap; gap: 16px 48px; align-items: flex-end; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+<div style="font-size: 13px; font-weight: 600; letter-spacing: 0.16em; color: {{kicker}}">WATCH OUR STORIES</div>
+<h2 style="margin: 0; font-family: Sora, Inter, sans-serif; font-size: clamp(30px, 3.6vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.015em">See the work, not just the words.</h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: {{muted}}">Films, documentaries and shorts from the field, straight from our YouTube channel.</p>
+</div>
+<a href="https://www.youtube.com/@oaziimagery" target="_blank" rel="noopener" style="background: #C1832A; color: #1C1A19; text-decoration: none; padding: 14px 22px; border-radius: 999px; font-weight: 600; font-size: 15px">Subscribe on YouTube ↗</a>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<a class="oz-vid" href="https://www.youtube.com/watch?v=AJh6afNoUEg" target="_blank" rel="noopener" aria-label="Watch Film 01 on YouTube, opens in a new tab" style="flex: 2 1 520px; min-width: 0; aspect-ratio: 16 / 9; position: relative; border-radius: 18px; overflow: hidden; background: #2A2624; text-decoration: none; color: #F4EFE9; display: flex; flex-direction: column; justify-content: space-between; padding: 20px; box-sizing: border-box; border: 1px solid {{line}}">
+<span style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: #C9C0B6"><span style="font-weight: 600; letter-spacing: 0.12em; color: #E2B266">FEATURED</span><span>YouTube</span></span>
+<span class="oz-play" aria-hidden="true" style="align-self: center; width: 84px; height: 84px; border-radius: 50%; background: #C1832A; display: flex; align-items: center; justify-content: center"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1C1A19"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: Sora, Inter, sans-serif; font-size: 22px; font-weight: 600">Film 01</span><span style="font-size: 14px; color: #C9C0B6">Tap to watch</span></span>
+</a>
+<div style="flex: 1 1 300px; min-width: 0; display: flex; gap: 20px">
+<sc-for list="{{shorts}}" as="v" hint-placeholder-count="2">
+<a class="oz-vid" href="{{v.href}}" target="_blank" rel="noopener" aria-label="{{v.aria}}" style="flex: 1 1 0; min-width: 0; aspect-ratio: 9 / 16; max-height: 420px; position: relative; border-radius: 18px; overflow: hidden; background: #2A2624; text-decoration: none; color: #F4EFE9; display: flex; flex-direction: column; justify-content: space-between; padding: 16px; box-sizing: border-box; border: 1px solid {{line}}">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: #E2B266">SHORT</span>
+<span class="oz-play" aria-hidden="true" style="align-self: center; width: 60px; height: 60px; border-radius: 50%; background: #C1832A; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1C1A19"></path></svg></span>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 17px; font-weight: 600">{{v.title}}</span>
+</a>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px">
+<sc-for list="{{films}}" as="v" hint-placeholder-count="3">
+<a class="oz-vid" href="{{v.href}}" target="_blank" rel="noopener" aria-label="{{v.aria}}" style="flex: 1 1 280px; min-width: 0; aspect-ratio: 16 / 9; position: relative; border-radius: 16px; overflow: hidden; background: #2A2624; text-decoration: none; color: #F4EFE9; display: flex; flex-direction: column; justify-content: space-between; padding: 16px; box-sizing: border-box; border: 1px solid {{line}}">
+<span style="font-size: 12px; color: #C9C0B6">YouTube</span>
+<span class="oz-play" aria-hidden="true" style="align-self: center; width: 56px; height: 56px; border-radius: 50%; background: #C1832A; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="#1C1A19"></path></svg></span>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 17px; font-weight: 600">{{v.title}}</span>
+</a>
+</sc-for>
+</div>
+</div>
+</section>

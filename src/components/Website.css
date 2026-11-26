@@ -1,0 +1,8 @@
+body{margin:0;background:#F4EFE9}
+a{color:#8E5A12}a:hover{color:#6E450D}
+.oz-left{animation:oz-left 60s linear infinite}
+.oz-right{animation:oz-right 60s linear infinite}
+.oz-row:hover .oz-track{animation-play-state:paused}
+@keyframes oz-left{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 8px))}}
+@keyframes oz-right{from{transform:translateX(calc(-50% - 8px))}to{transform:translateX(0)}}
+@media (prefers-reduced-motion: reduce){.oz-track{animation:none!important}.oz-row{overflow-x:auto!important}}

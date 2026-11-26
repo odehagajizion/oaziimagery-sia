@@ -1,0 +1,18 @@
+<div style="width: 100%; background: #F4EFE9; border-bottom: 1px solid #E6DED3; font-family: Inter, system-ui, sans-serif; color: #1C1A19">
+<header style="max-width: 1240px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="Website.dc.html" aria-label="OAZI IMAGERY home" style="display: flex; align-items: center; gap: 12px; text-decoration: none">
+<dc-import name="Mark" variant="ring" color="#C1832A" ink="#1C1A19" size="44" hint-size="44px,44px"></dc-import>
+<span style="display: flex; flex-direction: column; gap: 5px">
+<dc-import name="Mark" variant="word" color="#C1832A" ink="#1C1A19" size="22" hint-size="68px,22px"></dc-import>
+<span style="font-family: Sora, Inter, sans-serif; font-size: 8px; font-weight: 600; letter-spacing: 0.62em; color: #8E5A12">IMAGERY</span>
+</span>
+</a>
+<nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 26px; font-size: 15px; font-weight: 500">
+<sc-for list="{{items}}" as="item" hint-placeholder-count="5">
+<a href="{{item.href}}" aria-current="{{item.current}}" style="color: {{item.color}}; text-decoration: none; padding: 6px 0; border-bottom: 2px solid {{item.line}}">{{item.label}}</a>
+</sc-for>
+<a href="{{signInUrl}}" style="color: #1C1A19; text-decoration: none; padding: 6px 0; display: inline-flex; align-items: center; gap: 6px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8E5A12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg>Client sign in</a>
+<a href="Contact.dc.html" style="background: #1C1A19; color: #F4EFE9; text-decoration: none; padding: 12px 20px; border-radius: 999px; font-weight: 600">Start a project</a>
+</nav>
+</header>
+</div>
