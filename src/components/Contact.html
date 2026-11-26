@@ -77,7 +77,7 @@
 </select></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600">Tell us your story *<textarea name="message" required rows="5" placeholder="What are you working on, who needs to hear about it, and by when?" style="font: inherit; font-weight: 400; padding: 13px 14px; border: 1px solid #CFC5B8; border-radius: 10px; background: #FFFFFF; resize: vertical"></textarea></label>
 <label style="display: flex; gap: 10px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #4A433D"><input type="checkbox" name="whatsapp_opt_in" value="yes" style="width: 18px; height: 18px; margin: 2px 0 0; accent-color: #1C1A19; flex-shrink: 0">Send my call confirmation and reminder on WhatsApp too.</label>
-<div style="font-size: 13px; line-height: 1.5; color: #6B625A">We use these details only to reply to your enquiry and arrange your call.</div>
+<div style="font-size: 13px; line-height: 1.5; color: #6B625A">We use these details only to reply to your enquiry and arrange your call. <a href="Privacy.dc.html">Read our privacy notice</a>.</div>
 <sc-if value="{{error}}"><div role="alert" style="background: #FBEAE5; color: #7A2414; border: 1px solid #E9B9AC; border-radius: 10px; padding: 12px 14px; font-size: 15px">{{error}}</div></sc-if>
 <button type="submit" disabled="{{sending}}" style="align-self: flex-start; font: inherit; background: #1C1A19; color: #F4EFE9; border: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 16px; cursor: pointer">{{submitLabel}}</button>
 </form>
