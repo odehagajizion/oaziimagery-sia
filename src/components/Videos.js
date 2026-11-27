@@ -54,11 +54,14 @@ class Component extends DCLogic {
         }
       };
 
-      card.play = (e) => {
-        e.preventDefault();
-        const el = e.currentTarget;
-        el.dataset.userPlaying = 'true';
-        startPlayer(el, id, false);
+     card.play = (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+
+  const el = e.currentTarget;
+  el.dataset.userPlaying = 'true';
+
+  startPlayer(el, id, false);
       };
 
       return card;
