@@ -13,8 +13,8 @@ class Component extends DCLogic {
     return {
       items: links.map(([id, label, href]) => ({
         label, href,
-        color: a === id ? '#8E5A12' : '#1C1A19',
-        line: a === id ? '#C1832A' : 'transparent',
+        color: a === id ? '#12367F' : '#2B2D2F',
+        line: a === id ? '#16429B' : 'transparent',
         current: a === id ? 'page' : false
       }))
     };

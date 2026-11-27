@@ -68,11 +68,11 @@ class Component extends DCLogic {
     };
 
     return {
-      bg: dark ? '#1C1A19' : '#F4EFE9',
-      fg: dark ? '#F4EFE9' : '#1C1A19',
+      bg: dark ? '#2B2D2F' : '#F4EFE9',
+      fg: dark ? '#F4EFE9' : '#2B2D2F',
       muted: dark ? '#C9C0B6' : '#4A433D',
-      kicker: dark ? '#E2B266' : '#8E5A12',
-      line: dark ? '#3A3532' : '#E6DED3',
+      kicker: dark ? '#8FAEE6' : '#12367F',
+      line: dark ? '#3A3C3F' : '#E5DED3',
 
       featured: makeVideo('film', 'AJh6afNoUEg', 'Film 01'),
 

@@ -1,10 +1,10 @@
 /* VOICE: warm, documentary, confident. IDEA: a field film's story beats.
-   PICTURE: real field photography. COLOUR and TYPE: charcoal, cream, amber; Sora + Inter.
+   PICTURE: real field photography. COLOUR and TYPE: graphite #2B2D2F, cream #F4EFE9, royal blue #16429B (text: #12367F, on dark: #8FAEE6); Sora + Inter.
    LAYOUT: full-width bands, 1240px content, stacks on phones. */
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:#F4EFE9;overflow-x:clip}
-button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #C1832A;outline-offset:2px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #16429B;outline-offset:2px}
 input,select,textarea{font-size:16px!important}
 @media (max-width:640px){
  #app header nav{flex-wrap:nowrap!important;overflow-x:auto;width:100%;padding-bottom:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -15,5 +15,5 @@ input,select,textarea{font-size:16px!important}
  #app aside > div:last-child{display:none!important}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:#1C1A19;color:#F4EFE9;padding:12px 18px;border-radius:999px;font:600 15px Inter,system-ui,sans-serif;text-decoration:none}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:#2B2D2F;color:#F4EFE9;padding:12px 18px;border-radius:999px;font:600 15px Inter,system-ui,sans-serif;text-decoration:none}
 .skip-link:focus{top:12px}

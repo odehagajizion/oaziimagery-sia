@@ -78,7 +78,7 @@ ${page.path === '/404.html' ? '<meta name="robots" content="noindex">' : `<link 
 <meta property="og:url" content="${canonical}">
 <meta property="og:image" content="${SITE.url}${SITE.ogImage}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#1C1A19">
+<meta name="theme-color" content="#2B2D2F">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,6 +139,6 @@ ${PAGES.filter((p) => p.sitemap !== false).map((p) => `  <url><loc>${SITE.url}${
 </urlset>
 `);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n`);
-fs.writeFileSync(path.join(OUT, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" rx="24" fill="#F4EFE9"/><path d="M 78.6 99.9 A 44 44 0 1 1 101.35 75.05" fill="none" stroke="#C1832A" stroke-width="14" stroke-linecap="round"/><path d="M 43 84 L 60 46 L 77 84" fill="none" stroke="#1C1A19" stroke-width="12"/><circle cx="102.4" cy="102.4" r="8" fill="#C1832A"/></svg>\n`);
+fs.writeFileSync(path.join(OUT, 'favicon.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" rx="24" fill="#F4EFE9"/><path d="M 78.6 99.9 A 44 44 0 1 1 101.35 75.05" fill="none" stroke="#16429B" stroke-width="14" stroke-linecap="round"/><path d="M 43 84 L 60 46 L 77 84" fill="none" stroke="#2B2D2F" stroke-width="12"/><circle cx="102.4" cy="102.4" r="8" fill="#16429B"/></svg>\n`);
 
 console.log(`Built ${PAGES.length} pages into dist/`);

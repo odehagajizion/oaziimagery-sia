@@ -33,14 +33,14 @@ class Component extends DCLogic {
       needs: needs.map(([id, label]) => {
         const on = s.need === id;
         return { label, checked: on ? 'true' : 'false', pick: () => this.setState({ need: id }),
-          bg: on ? '#F4EFE9' : 'transparent', fg: on ? '#1C1A19' : '#F4EFE9', border: on ? '#F4EFE9' : '#4A433D',
-          dot: on ? '#C1832A' : 'transparent', dotBorder: on ? '#C1832A' : '#B5ADA5' };
+          bg: on ? '#F4EFE9' : 'transparent', fg: on ? '#2B2D2F' : '#F4EFE9', border: on ? '#F4EFE9' : '#4A433D',
+          dot: on ? '#16429B' : 'transparent', dotBorder: on ? '#16429B' : '#B5ADA5' };
       }),
       rec: recs[s.need],
       tabs: [['consultation', '01 Strategy & Consultation'], ['advisory', '02 Advisory'], ['implementation', '03 Production & Delivery']].map(([id, label]) => {
         const on = s.tab === id;
         return { label, selected: on ? 'true' : 'false', pick: () => this.setState({ tab: id }),
-          bg: on ? '#1C1A19' : 'transparent', fg: on ? '#F4EFE9' : '#1C1A19', border: on ? '#1C1A19' : '#CFC5B8' };
+          bg: on ? '#2B2D2F' : 'transparent', fg: on ? '#F4EFE9' : '#2B2D2F', border: on ? '#2B2D2F' : '#CFC5B8' };
       }),
       pillar: Object.assign({}, pillars[s.tab], { items: pillars[s.tab].items.map((t) => ({ text: t })) }),
       faqs: faqData.map(([q, a], i) => {

@@ -15,17 +15,17 @@ class Component extends DCLogic {
       showPartner: () => this.setState({ mode: 'partner' }),
       vendorPressed: partner ? 'false' : 'true',
       partnerPressed: partner ? 'true' : 'false',
-      vendorBg: partner ? 'transparent' : '#1C1A19',
+      vendorBg: partner ? 'transparent' : '#2B2D2F',
       vendorFg: partner ? '#4A433D' : '#F4EFE9',
-      partnerBg: partner ? '#C1832A' : 'transparent',
-      partnerFg: partner ? '#1C1A19' : '#4A433D',
+      partnerBg: partner ? '#16429B' : 'transparent',
+      partnerFg: partner ? '#FFFFFF' : '#4A433D',
       rows: data.map(([topic, v, p]) => ({
         topic,
         text: partner ? p : v,
-        bg: partner ? '#1C1A19' : '#FBF8F4',
+        bg: partner ? '#2B2D2F' : '#FBF8F4',
         fg: partner ? '#F4EFE9' : '#6B625A',
-        border: partner ? '#1C1A19' : '#E6DED3',
-        label: partner ? '#E2B266' : '#6B625A'
+        border: partner ? '#2B2D2F' : '#E5DED3',
+        label: partner ? '#8FAEE6' : '#6B625A'
       }))
     };
   }

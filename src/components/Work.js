@@ -24,12 +24,12 @@ class Component extends DCLogic {
         const count = id === 'all' ? projects.length : projects.filter((p) => p.tags.indexOf(id) >= 0).length;
         return { label, count: String(count), pressed: on ? 'true' : 'false',
           pick: () => { const first = projects.find((p) => id === 'all' || p.tags.indexOf(id) >= 0); this.setState({ filter: id, active: first ? first.id : s.active }); },
-          bg: on ? '#C1832A' : 'transparent', fg: on ? '#1C1A19' : '#F4EFE9', border: on ? '#C1832A' : '#4A433D' };
+          bg: on ? '#16429B' : 'transparent', fg: on ? '#FFFFFF' : '#F4EFE9', border: on ? '#16429B' : '#4A433D' };
       }),
       active,
       prev: go(-1),
       next: go(1),
-      shown: shownList.map((p) => ({ ...p, pressed: p.id === active.id ? 'true' : 'false', ring: p.id === active.id ? '#C1832A' : 'transparent', open: () => this.setState({ active: p.id }) }))
+      shown: shownList.map((p) => ({ ...p, pressed: p.id === active.id ? 'true' : 'false', ring: p.id === active.id ? '#16429B' : 'transparent', open: () => this.setState({ active: p.id }) }))
     };
   }
 }

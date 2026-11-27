@@ -17,7 +17,7 @@ class Component extends DCLogic {
     const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const sel = days[s.dayIdx] || days[0];
     const pad = (n) => String(n).padStart(2, '0');
-    const pill = (on) => ({ bg: on ? '#1C1A19' : '#FFFFFF', fg: on ? '#F4EFE9' : '#1C1A19', border: on ? '#1C1A19' : '#CFC5B8', checked: on ? 'true' : 'false' });
+    const pill = (on) => ({ bg: on ? '#2B2D2F' : '#FFFFFF', fg: on ? '#F4EFE9' : '#2B2D2F', border: on ? '#2B2D2F' : '#CFC5B8', checked: on ? 'true' : 'false' });
 
     const send = (e) => {
       e.preventDefault();
@@ -40,7 +40,7 @@ class Component extends DCLogic {
         const on = s.picked.indexOf(id) >= 0;
         return { label, pressed: on ? 'true' : 'false',
           toggle: () => this.setState({ picked: on ? s.picked.filter((x) => x !== id) : s.picked.concat(id) }),
-          bg: on ? '#1C1A19' : '#FFFFFF', fg: on ? '#F4EFE9' : '#1C1A19', border: on ? '#1C1A19' : '#CFC5B8' };
+          bg: on ? '#2B2D2F' : '#FFFFFF', fg: on ? '#F4EFE9' : '#2B2D2F', border: on ? '#2B2D2F' : '#CFC5B8' };
       }),
       sent: s.sent,
       notSent: !s.sent,

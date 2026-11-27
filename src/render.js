@@ -40,7 +40,7 @@ const camel = (s) => s.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
 let maskN = 0;
 function markSVG(doc, p) {
-  const v = p.variant || 'ring', size = Number(p.size || 160), c = p.color || '#C1832A', ink = p.ink || '#1C1A19';
+  const v = p.variant || 'ring', size = Number(p.size || 160), c = p.color || '#16429B', ink = p.ink || '#2B2D2F';
   let s;
   if (v === 'word') {
     const w = Math.round(size * 246 / 80);

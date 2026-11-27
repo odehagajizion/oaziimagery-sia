@@ -16,8 +16,8 @@ class Component extends DCLogic {
       steps: data.map((d, k) => {
         const on = k === i, done = k < i;
         return { num: String(k + 1), title: d.title, selected: on ? 'true' : 'false', pick: () => this.setState({ step: k }),
-          bg: on ? '#1C1A19' : '#FBF8F4', fg: on ? '#F4EFE9' : '#1C1A19', border: on ? '#1C1A19' : '#E6DED3',
-          numBg: on || done ? '#C1832A' : '#E9E2D8', numFg: '#1C1A19' };
+          bg: on ? '#2B2D2F' : '#FBF8F4', fg: on ? '#F4EFE9' : '#2B2D2F', border: on ? '#2B2D2F' : '#E5DED3',
+          numBg: on || done ? '#16429B' : '#E9E2D8', numFg: on || done ? '#FFFFFF' : '#2B2D2F' };
       }),
       cur,
       prev: () => this.setState({ step: Math.max(0, i - 1) }),

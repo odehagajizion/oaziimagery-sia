@@ -15,7 +15,7 @@ class Component extends DCLogic {
       tabs: sectors.map((x) => {
         const on = x.id === cur.id;
         return { kicker: x.kicker, label: x.label, selected: on ? 'true' : 'false', pick: () => this.setState({ sector: x.id }),
-          bg: on ? '#1C1A19' : '#FBF8F4', fg: on ? '#F4EFE9' : '#1C1A19', border: on ? '#1C1A19' : '#E6DED3', kickerColor: on ? '#E2B266' : '#8E5A12' };
+          bg: on ? '#2B2D2F' : '#FBF8F4', fg: on ? '#F4EFE9' : '#2B2D2F', border: on ? '#2B2D2F' : '#E5DED3', kickerColor: on ? '#8FAEE6' : '#12367F' };
       }),
       sector: Object.assign({}, cur, { items: cur.items.map((t) => ({ text: t })) })
     };
