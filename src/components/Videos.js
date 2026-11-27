@@ -25,6 +25,7 @@ class Component extends DCLogic {
       iframe.allowFullscreen = true;
 
       card.prepend(iframe);
+      card.classList.add('oz-vid-playing');
     };
 
     const makeVideo = (kind, id, title) => {
@@ -45,9 +46,11 @@ class Component extends DCLogic {
       };
 
       card.stop = (e) => {
-        const el = e.currentTarget;
-        if (!el.dataset.userPlaying) {
-          el.querySelector('.oz-vid-player')?.remove();
+  const el = e.currentTarget;
+
+  if (!el.dataset.userPlaying) {
+    el.querySelector('.oz-vid-player')?.remove();
+    el.classList.remove('oz-vid-playing');
         }
       };
 

@@ -6,4 +6,32 @@ body{margin:0}
 .oz-vid>span{position:relative;z-index:3;pointer-events:none}
 .oz-vid:hover .oz-play{transform:scale(1.08)}
 .oz-play{transition:transform .2s ease}
-@media (prefers-reduced-motion:reduce){.oz-play{transition:none}}
+@media (prefers-reduced-motion:reduce){.oz-play{transition:none}} 
+
+/* Mobile: make the tap action obvious */
+@media (hover: none), (pointer: coarse) {
+  .oz-vid::after {
+    content: "▶  Tap to watch";
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    z-index: 4;
+    padding: 9px 13px;
+    border-radius: 999px;
+    background: #C1832A;
+    color: #1C1A19;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    pointer-events: none;
+  }
+
+  .oz-vid-playing::after {
+    display: none;
+  }
+
+  .oz-vid {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
